@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header class="header-bar">        
@@ -25,14 +27,14 @@
         <div class="preview-card">
             <div class="preview-card-left">
                 <div class="card-overflow">
-                    <h1 class="card-header-font">Наконец в эфире!</h1>
-                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam saepe ducimus iste, ratione temporibus facere et, doloremque minus aut beatae fuga harum distinctio est. Quo et voluptates distinctio officia ipsam?</p>
+                    <h1 class="card-header-font">Lorem, ipsum dolor.</h1>
+                    <p class="card-description-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam saepe ducimus iste, ratione temporibus facere et, doloremque minus aut beatae fuga harum distinctio est. Quo et voluptates distinctio officia ipsam?</p>
                 </div>
             </div>
             <div class="preview-card-right">
                 <div class="card-overflow">
-                    <h1 class="card-header-font">Скоро второй выпуск?</h1>
-                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam saepe ducimus iste, ratione temporibus facere et, doloremque minus aut beatae fuga harum distinctio est. Quo et voluptates distinctio officia ipsam?</p>
+                    <h1 class="card-header-font">Lorem, ipsum.</h1>
+                    <p class="card-description-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam saepe ducimus iste, ratione temporibus facere et, doloremque minus aut beatae fuga harum distinctio est. Quo et voluptates distinctio officia ipsam?</p>
                 </div>  
             </div>
         </div>
@@ -47,14 +49,36 @@
         <div class="podcatst-slider">
             <div class="slider-wrapper">
                 <div class="slider-card">
-                    <img src="image/podcast1.jpg" class="slider-card-img">
+                    <h1 class="slider-header-font">Выпуск 1</h1>
+                    <p class="slider-description-font">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus in adipisci maiores culpa commodi quas ut aut. Officiis, ab eum!</p>
+                    <img src="image/podcast1.jpg" id="slider-card-1" class="slider-card-img slider-card-shown" alt="Тут должна быть какая-то картинка, но она там же где и новый выпуск">
                 </div>
                 <div class="slider-card">
-                    <img src="image/podcast2.jpg" class="slider-card-img">
+                    <h1 class="slider-header-font">Выпуск 2</h1>
+                    <p class="slider-description-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus amet optio debitis eveniet temporibus enim eius! Totam neque repellat facilis quae iusto voluptate ullam perspiciatis voluptates nisi a, facere voluptatum quod non recusandae porro. Aut illo doloremque maiores perferendis!</p>
+                    <img src="image/podcast2.jpg" id="slider-card-2" class="slider-card-img" alt="Тут должна быть какая-то картинка, но она там же где и новый выпуск">
+                </div>
+                <div class="slider-card">
+                    <h1 class="slider-header-font">Выпуск 3</h1>
+                    <p class="slider-description-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto ab tempora possimus, tempore dolores perspiciatis a, amet sed aliquid enim illum est ad delectus vero accusantium, porro consequuntur nesciunt.</p>
+                    <img src="image/podcast1.jpg" id="slider-card-3" class="slider-card-img" alt="Тут должна быть какая-то картинка, но она там же где и новый выпуск">
+                </div>
+                <div class="slider-card">
+                    <h1 class="slider-header-font">Выпуск 4</h1>
+                    <p class="slider-description-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolores?</p>
+                    <img src="image/podcast2.jpg" id="slider-card-4" class="slider-card-img" alt="Тут должна быть какая-то картинка, но она там же где и новый выпуск">
+                </div>
+                <div class="slider-card">
+                    <h1 class="slider-header-font">Выпуск 5</h1>
+                    <p class="slider-description-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt iste fugiat dicta maiores possimus.</p>
+                    <img src="image/podcast1.jpg" id="slider-card-5" class="slider-card-img" alt="Тут должна быть какая-то картинка, но она там же где и новый выпуск">
                 </div>
             </div>
-            <a class="slider-button slider-button-left" href="#" role="button"></a> 
-            <a class="slider-button slider-button-right slider-button-show " href="#" role="button"></a> 
+            <a class="slider-button slider-button-left" role="button"><</a> 
+            <a class="slider-button slider-button-right slider-button-show" role="button">></a>
+            <div class="slider-dots">
+                <div class="slider-dots-wrapper"></div>
+            </div> 
         </div>
         <!-- <h1>Header</h1>
         <p>

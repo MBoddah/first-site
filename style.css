@@ -89,6 +89,7 @@ body {
 
 .card-overflow {
     display: flex;
+    position: relative;
     flex-direction: column;
     height: 100%;
     width: 100%;
@@ -162,12 +163,33 @@ body {
 
 .slider-card {
     flex: 0 0 100%;
+    text-align: left;
     max-width: 100%;
+    transition: .5s;
 }
 
 .slider-card-img {
+    display: flex;
+    opacity: .6;
     width: 100%;
     transform: translateY(-25%);
+}
+
+.slider-header-font {
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.slider-description-font {
+    width: 90%;
+    margin: 1% auto;
+    color:  inherit;
 }
 
 .slider-button {
@@ -180,7 +202,7 @@ body {
     opacity: 0.5;
     height: 40px;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .9);
 }
 
 .slider-button:hover,
@@ -201,4 +223,43 @@ body {
 
 .slider-button-right {
     right: 0;
+}
+
+.slider-dots {
+    display: table;
+    position: absolute;
+    border-radius: 20px;
+    width: 20%;
+    height: 5%;
+    left: 40%;
+    bottom: 5%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.slider-dots-wrapper {
+    display: table-cell;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.slider-dot {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 4%;
+    width: 10px;
+    height: 10px;
+    background: #666;
+    transition: .2s;
+}
+
+.slider-dot:hover {
+    background: #aaa;
+}
+
+.slider-toggled-dot {
+    width: 13px;
+    height: 13px;
+    background: #fff;
 }
